@@ -1,0 +1,97 @@
+.container{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.card{
+    height: 570px;
+    width: 290px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.upper-card{
+    background-color: rgb(230,235,225);
+    padding: 7px 17px 10px 0px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.image{
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 250px;
+}
+
+.best-seller{
+    float: left;
+    height: 25px;
+    width: 80px;
+    text-align: center;
+    margin: -8px 0px 0px 0px;
+    border-radius: 15px 0px 14px 0px;
+    background-color: orange;
+}
+
+.lower-card{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.description{
+    padding-bottom: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.rating{
+    padding-bottom: 10px;
+}
+
+.star{
+    color: orange;
+}
+
+.fill-color{
+    color: orange;
+}
+
+.no-of-ratings{
+    color: rgb(37, 37, 114);
+}
+
+.price{
+    padding-bottom: 10px;
+    color:rgb(133, 11, 11);
+}
+
+.amount{
+    font-size: larger;
+    color:rgb(133, 11, 11);
+}
+
+.strike-through{
+    font-size: 15px;
+    text-decoration: line-through;
+    color: darkslategray;
+}
+
+.percentage-off{
+    padding: 8px;
+    font-size: 15px;
+    color: black;
+}
+
+.discount{
+    padding-bottom: 10px;
+    color: gray;
+}
+
+.delivery{
+    font-size: 16px;
+}
