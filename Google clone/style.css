@@ -1,0 +1,40 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.content{
+    margin: 150px 1px 90px 1px;
+    text-align: center;
+}
+
+.searchbar{
+    width: 500px;
+    position: relative;
+    border-color: lightgrey;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.buttons{
+    margin: 20px;
+}
+
+.button{
+    border-radius: 10px;
+    background-color: lightgrey;
+    padding: 10px;
+    margin: 10px 5px 20px 30px;
+}
+
+.languages{
+    font-size: small;
+    padding: 20px;
+}
+
+.footer{
+    display: flex;   
+    /* height: 20px; */
+    background-color: lightgrey; 
+}
