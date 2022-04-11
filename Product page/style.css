@@ -1,0 +1,53 @@
+/* your code here */
+body{
+    background: lightgreen;
+    display: flex;
+    justify-content: center;
+  }
+  .product{
+    background-color: white;
+    border-radius: 5px;
+    height: 600px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+  }
+  .price{
+    color: red;
+  }
+  .controls{
+    color: red;
+    position: absolute;
+  }
+  .photo-container{
+    margin-left: -10%;
+    background-color: green;
+    height: 500px;
+    width: 400px;
+  }
+  .photo-album{
+    margin-top: 66px;
+    background-color: white;
+    display:flex;
+    height: 80px;
+    width: 400px;
+  }
+  .images{
+    border: 2px solid grey;
+    margin: 10px;
+    height: 60px;
+    width: 60px;
+  }
+  .variant{
+    border: 2px solid transparent;
+  }
+  .variant:hover{
+    border: 2px solid;
+  }
+  .buy--btn{
+    background-color: red;
+    height: 50px;
+    width: 200px;
+    border: 0px;
+    border-radius: 3px;
+  }
