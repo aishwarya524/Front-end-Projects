@@ -1,0 +1,25 @@
+body {
+    background: black;
+    color: white;
+}
+
+.header{
+    text-align: center;
+    font-size: 60px;
+}
+
+.class1{
+    background-image: linear-gradient(to right, black, red);
+    border: dotted;
+    border-radius: 15px;
+    border-color: black;
+}
+
+.class2 *{
+    background-image: linear-gradient(to right, black, red);
+}
+
+.class3{
+    background-image: linear-gradient(to right, white, red);
+    border-radius: 10px;
+}
