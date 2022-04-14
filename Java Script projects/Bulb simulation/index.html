@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bulb on-off</title>
+        <link rel="stylesheet" href="index.css">
+        <script>
+            var bulbStatus = false
+            function on(){
+                document.getElementById("bulb-on-off").src = "https://www.w3schools.com/js/pic_bulbon.gif"
+                document.getElementById("bulb-body").style.backgroundColor = "rgb(252, 252, 189)"
+                bulbStatus = true
+            }
+
+            function off(){
+                document.getElementById("bulb-on-off").src = "https://www.w3schools.com/js/pic_bulboff.gif"
+                document.getElementById("bulb-body").style.backgroundColor = "rgb(240, 239, 239)"
+                bulbStatus = false
+            }
+
+            function onOff(){
+                if(bulbStatus==false){
+                    on()
+                }
+                else{
+                    off()
+                }
+            }
+
+        </script>
+    </head>
+    <body id="bulb-body">
+        <div class="main-div" id="main">
+            <div class="bulb-div" id="bulb">
+                <img id="bulb-on-off" src="https://www.w3schools.com/js/pic_bulboff.gif">
+                <br>
+                <button onclick="on()">Turn On</button>
+                <br>
+                <br>
+                <button onclick="off()">Turn off</button>
+                <br>
+                <br>
+                <button onclick="onOff()">Turn on/Turn off</button>
+            </div>
+        </div>              
+    </body>
+</html>
