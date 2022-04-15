@@ -14,6 +14,11 @@ function selectedButton(buttonValue){
         }
     }
     else{
-        displayingValue.innerText = displayingValue.innerText + buttonValue
+        if(displayingValue.innerText === '0'){
+            displayingValue.innerText = buttonValue
+        }
+        else{
+            displayingValue.innerText = displayingValue.innerText + buttonValue
+        }
     }    
 }
