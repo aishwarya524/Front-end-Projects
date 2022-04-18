@@ -10,19 +10,24 @@ function isOperator(buttonValue){
 }
 
 function selectedButton(buttonValue){
+    
+  if(displayingValue < 24){
     if(buttonValue ==="CLR"){
         displayingValue.innerText = '0'
     }
+    
     else if(buttonValue === 'b'){
         displayingValue.innerText = displayingValue.innerText.slice(0,-1)
     }
+    
     else if(buttonValue === '='){
-            if(isOperator(displayingValue.innerText.slice(-1))){
-                while(isOperator(displayingValue.innerText.slice(-1))){
-                    displayingValue.innerText = displayingValue.innerText.slice(0,-1)
-                }
+            try{
+                displayingValue.innerText = eval(displayingValue.innerText)
             }
-            displayingValue.innerText = eval(displayingValue.innerText)
+            catch(error){
+                displayingValue.innerText = 0
+            }
+            
     }
     else{
         if(displayingValue.innerText === '0'){
@@ -37,15 +42,13 @@ function selectedButton(buttonValue){
         }
         else{
             let i = displayingValue.innerText.length
-            if(buttonValue === '.' && displayingValue.innerText.substring(i-2,i)==="00"){
-                displayingValue.innerText = displayingValue.innerText.slice(0,-1) + buttonValue
-            }
             else if(isOperator(displayingValue.innerText[i-1]) && isOperator(buttonValue)){
                 displayingValue.innerText = displayingValue.innerText.slice(0,-1) + buttonValue
             }
             else{
                 displayingValue.innerText = displayingValue.innerText + buttonValue
             }            
-        }
-    }    
+         }
+      }
+   }    
 }
