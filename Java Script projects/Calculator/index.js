@@ -42,7 +42,7 @@ function selectedButton(buttonValue){
         }
         else{
             let i = displayingValue.innerText.length
-            else if(isOperator(displayingValue.innerText[i-1]) && isOperator(buttonValue)){
+            if(isOperator(displayingValue.innerText[i-1]) && isOperator(buttonValue)){
                 displayingValue.innerText = displayingValue.innerText.slice(0,-1) + buttonValue
             }
             else{
