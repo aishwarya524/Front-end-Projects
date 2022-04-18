@@ -11,7 +11,7 @@ function isOperator(buttonValue){
 
 function selectedButton(buttonValue){
     
-  if(displayingValue < 24){
+  if(displayingValue < 20){
     if(buttonValue ==="CLR"){
         displayingValue.innerText = '0'
     }
