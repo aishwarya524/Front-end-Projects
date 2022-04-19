@@ -11,7 +11,10 @@ function isOperator(buttonValue){
 
 function selectedButton(buttonValue){
     
-  if(displayingValue < 20){
+    if(displayingValue.innerText.length >= 20){
+      return
+    }
+
     if(buttonValue ==="CLR"){
         displayingValue.innerText = '0'
     }
@@ -48,7 +51,6 @@ function selectedButton(buttonValue){
             else{
                 displayingValue.innerText = displayingValue.innerText + buttonValue
             }            
-         }
-      }
-   }    
+        }
+    }    
 }
