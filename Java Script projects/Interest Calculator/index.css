@@ -1,0 +1,59 @@
+body{
+    background-image: url("img1.jpg");
+}
+
+h1{
+    color: #3da3d6;
+    text-align: center;
+}
+
+.labels{
+    padding: 5px;
+    margin: 1%;
+    background-color: #3da3d6;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+.inputs{
+    background-color: #d0e2eb;
+    border-radius: 2px;
+    padding: 5px;
+    border: #3da3d6;
+}
+
+.submit-button{
+    margin: 1%;
+    padding: 0.5%;
+    font-size: 16px;
+    background-color: #15445c;
+    border-radius: 3px;
+    border: #3da3d6;
+}
+
+.user-values{
+    padding: 2%;
+}
+
+.user-table{
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+.table-values{
+    background-color: #3da3d6;
+}
+
+tr, td{
+    padding: 1%;
+    width: 1%;
+    border: solid 1px;
+    border-radius: 5px;
+    background-color: #9abfd1;
+}
+
+footer{
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
