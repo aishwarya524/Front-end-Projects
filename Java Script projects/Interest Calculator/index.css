@@ -54,6 +54,6 @@ tr, td{
 
 footer{
     color: white;
-    position: absolute;
+    position: relative;
     bottom: 0;
 }
