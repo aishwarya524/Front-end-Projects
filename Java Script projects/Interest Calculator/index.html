@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div>
+        <h1>Interest Calculator</h1>
+        <div class="user-input">
+            <form id="user-form" action="index.js" method="get">
+                <label class="labels" for="Name">Enter your name: </label>
+                <input class="inputs" id="user-name" type="text" name="Name" placeholder="eg: Andrew" required>
+                <br>
+                <br>
+                <label class="labels" for="Balance">Enter balance: </label>
+                <input class="inputs" id="user-balance" type="number" min="0" name="Balance" placeholder="eg: 100000" required>
+                <br>
+                <br>
+                <input class="submit-button" type="button" onclick="userInput()" value="Submit">
+            </form>                
+        </div>
+        <div class="user-values">
+            <table id="user-table">
+                <tr class="table-values">
+                    <td class="table-values">User Name</td>
+                    <td class="table-values">Bank Balance</td>
+                    <td class="table-values">Balance with Interest</td>
+                </tr>
+            </table>
+        </div>
+        <footer>Note: If the bank balance is more than ₹200000, an interest of 10% will be applied and a deduction of 0.2% in the maintenance charge is given.\nIf the bank balance is between ₹100000 and ₹100000, an interest of 5% will be applied and a deduction of 0.05% in the maintenance charge is given.\nIf the balance is less than ₹100000, an interest of 3% is applies.</footer>
+    </div>
+    
+    <script src="index.js">
+    </script>
+</body>
+</html>
