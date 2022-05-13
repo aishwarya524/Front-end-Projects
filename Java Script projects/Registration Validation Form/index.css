@@ -1,0 +1,47 @@
+body{
+    background-color : rgb(247, 247, 247);
+    color: white;
+}
+
+.container{
+    margin-top: 3%;
+    padding: 1%;
+    max-width: fit-content;
+    border: solid 3px rgb(59, 8, 24);
+    background-color: rgb(83, 25, 42);
+    border-radius: 10px;
+}
+
+h2{
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+.btn{
+    min-width: 438px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-color: rgb(20, 3, 3);
+}
+
+.btn-primary{
+    border-color: black;
+}
+
+.btn-primary:hover{
+    background-color: black;
+    border-color: white;
+}
+
+.form-check-input:checked {
+    background-color: rgb(20, 3, 3);
+    border-color: rgb(20, 3, 3);
+}
+
+.form-check-input .form-check-input:hover{
+    border-color: rgb(20, 3, 3);
+}
+
+.form-select .form-control:active{
+    box-shadow: none;
+}
