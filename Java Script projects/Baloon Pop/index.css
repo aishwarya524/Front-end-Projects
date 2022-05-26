@@ -1,0 +1,64 @@
+.container{
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(5, 109, 109);
+}
+
+.row{
+    max-width: 300px;
+    margin: auto !important;
+    padding-top: 10%;
+}
+
+.pop, .col-xs-2{
+    width: 60px;
+    height: 60px;
+}
+
+.baloon{
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+div.baloon1, div.baloon5, #baloon13 div, #baloon19, #baloon28{
+    background-color: aqua;
+}
+
+#baloon2, #baloon9, #baloon16, #baloon24, #baloon30{
+    background-color: blue;
+} 
+
+#baloon3, #baloon12, #baloon20, #baloon22, #baloon26{
+    background-color: antiquewhite;
+
+}
+
+#baloon4, #baloon6, #baloon10, #baloon21, #baloon27{
+    background-color: brown;
+}
+
+#baloon7, #baloon8, #baloon11, #baloon14, #baloon15{
+    background-color: black;
+} 
+
+#baloon17, #baloon18, #baloon23, #baloon25, #baloon29{
+    background-color: blueviolet;
+}
+
+.pop{
+    display: none;
+    text-align: center;
+    margin: 17px;
+    margin-top: -40px;
+    margin-left: 1px;
+    padding: 20px;
+}
+
+.h1-container{
+    display: none;
+    color: rgb(34, 143, 143);
+    margin: 100px;
+}
