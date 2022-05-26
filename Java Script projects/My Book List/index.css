@@ -1,0 +1,44 @@
+body{
+    background-image: url("book.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+    font-size: larger;
+}
+
+h1{
+    text-align: center;
+}
+
+.form-input{
+    padding: 20px;
+}
+
+.table-values{
+    padding-top: 30px;
+}
+
+.close-btn{
+    color: rgb(163, 9, 9);
+    margin: auto;
+    text-align: center;
+}
+
+.close-btn:hover{
+    cursor: pointer;
+}
+
+.row-head{
+    background-color: rgb(10, 10, 41);
+    color: white;
+}
+
+.row-values{
+    background-color: rgb(83, 83, 241);
+    color: white;
+}
+
+.labels{
+    font-size: larger; 
+    font-weight: bold;   
+}
