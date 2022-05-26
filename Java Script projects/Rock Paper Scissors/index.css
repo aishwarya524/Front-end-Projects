@@ -1,0 +1,24 @@
+body{
+    background-color: #ffea00 !important;
+    color: white !important;
+}
+
+.container{
+    text-align: center;
+}
+
+.image{
+    width: 100px;
+    height: 100px;  
+}
+.images{
+    display: none;
+}
+
+.select-images{
+    margin-top: 20%;
+}
+
+.score{
+    font-size: xx-large;
+}
