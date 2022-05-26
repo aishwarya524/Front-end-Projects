@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Authentication</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Authentication</h1>
+        <div class="inner-container1">
+            <input type="password" class="password-field" onkeydown ="checkPwdStrength()" name="sign-up" id="sign-up" placeholder="Create password">
+            <p id="sign-up-valid">Password saved successfully</p>
+            <p id="sign-up-invalid">Password must be atleast 8 characters</p>
+            <p id="password-strength">Weak</p>
+            <button onclick="signUp()" class="submit-field">Sign Up</button>
+        </div>
+        <div class="inner-container2">
+            <input type="password" class="password-field" name="log-in" id="log-in" placeholder="Enter password">
+            <p id="log-in-valid">Password correct, access granted</p>
+            <p id="log-in-invalid">Password incorrect, access denied</p>
+            <button onclick="login()" class="submit-field">Log In</button> 
+        </div>
+    </div> 
+    <script src="index.js">
+    </script>   
+</body>
+</html>
