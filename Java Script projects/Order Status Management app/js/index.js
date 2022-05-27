@@ -41,11 +41,13 @@ const submitOrder = () => {
     }
 
     var toppings = document.getElementsByName('pizza-toppings')
+    let temp = ""
     for(i = 0; i < toppings.length; i++){
         if(toppings[i].checked){
-            topping += toppings[i].value + ", "
+            temp += toppings[i].value + ", "
         }
     }
+    topping = temp
     if(topping === ""){
         alert("Please choose topping")
         return
