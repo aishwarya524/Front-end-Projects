@@ -147,6 +147,17 @@ const createNewOrderColumn = (orderID) => {
     cancelButton.addEventListener('click', () => {
         // parentDiv.removeChild(colDiv)
         colDiv.style.display = 'none'
+        
+        orderIndex = orderIDArray.indexOf(orderID)
+        if(orderIndex > -1){
+            orderIDArray.splice(orderIndex, 1);
+        }
+
+        displayingOrderIndex = displayingOrders.indexOf(orderID)
+        if(displayingOrderIndex > -1){
+            displayingOrders.splice(displayingOrderIndex, 1);
+        }
+        
     })
 }
 
