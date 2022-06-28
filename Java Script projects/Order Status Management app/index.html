@@ -6,33 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Status Management</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
  </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-        <a class="navbar-brand" href="#">Order Status Management</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">PizzaShop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#" onclick="homePage()">Home <span class="sr-only">(current)</span></a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"  onclick="homePage()">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"  onclick="openPage('placeOrder', this)">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"  onclick="openPage('trackOrder', this)">My Orders</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <div class="signUpLink" id="signUpLink"><a class="nav-link registration-link" href="#" data-toggle="modal" data-target="#signUpModal">Sign Up <span class="sr-only">(current)</span></a></div>
-            <div id="logInLink"><a class="nav-link registration-link" href="#" data-toggle="modal" data-target="#logInModal" >Log In<span class="sr-only">(current)</span></a></div>
-         </form>
+          <form class="d-flex" role="search">
+            <div class="signUpLink" id="signUpLink"><a class="nav-link nav-item registration-link" href="#" data-toggle="modal" data-target="#signUpModal">Sign Up <span class="sr-only"></span></a></div>
+            <div id="logInLink"><a class="nav-link registration-link" href="#" data-toggle="modal" data-target="#logInModal" >Log In<span class="sr-only"></span></a></div>
+          </form>
+          <div class="d-flex" style="color: white;">
+            <a class="nav-link" aria-current="page" href="#contact" onclick="contact()">Contact us</a>
+          </div>
         </div>
-      </nav>
-
-      <button class="tab-link" onclick="openPage('placeOrder', this)">Place Order</button>
-      <button class="tab-link" onclick="openPage('trackOrder', this)">Track Order</button>
+      </div>
+    </nav>
 
       <div class="tab-content place-order" id="placeOrder">
         
@@ -148,13 +158,32 @@
       </div>
 
       <div class="jumbotron bg-light" id="jumb">
-        <h1 class="display-4">Welcome to user management app!</h1>
-        <p class="lead">This is a simple web app to place and track order status.</p>
-        <hr class="my-4">
-        <p>It uses javascript promises to display order status timely and uses well defined validation conditions for user sign-up.</p>
-        <p class="lead">
-          <a class="btn" href="#" role="button" onclick="openPage('placeOrder', this)">Place Order</a>
-        </p>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="pizza-img1.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="pizza-img2.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="pizza-img3.jpg" class="d-block w-100">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+          <div class="features">
+            <div class="featureHeading">Make your pizza the way you love it!</div>
+            Get your favourite pizza easily and quickly at your doorstep!
+            <div><button class="featureBtn" onclick="openPage('placeOrder', this)">Create your pizza now!</button></div>
+          </div>
     </div>
 
     <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -307,6 +336,29 @@
       </div>
     </div>
 
+    <div id="contact" class="contact">
+      <div class="container py-4">
+        <form id="contactForm">
+          <div class="contactHeading">Contact Us</div>
+          <div class="mb-3">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-control" id="name" type="text" placeholder="Name" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="emailAddress">Email Address</label>
+            <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
+          </div>
+          <div class="d-grid">
+            <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    
     <script src="js/validation.js"></script>
     <script src="js/index.js"></script>
     <script src="js/orderStatus.js"></script>
