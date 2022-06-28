@@ -6,9 +6,13 @@ h1{
     color: #009579 !important;
 }
 
-.btn{
+.featureBtn{
     background-color: #009579;
     color: white;
+    border: white;
+    border-radius: 5px;
+    padding: 0.5% 0.7% 0.5% 0.7%;
+    margin: 20px;
 }
 .h3Heading{
     color: white;
@@ -28,7 +32,7 @@ h1{
 
 .toppings, .submit-choices, .size{
     font-size: large;
-    margin: 10px;
+    margin: 20px;
     background-color: #009579;
     color: white;
     padding: 10px;
@@ -55,7 +59,8 @@ label{
 }
 
 .registration-link{
-        color: white;
+        color: white !important;
+        width: 80px;
 }
 
 .main-heading{
@@ -109,6 +114,36 @@ button:hover{
 
 }
 
+.container{
+    /* display: none; */
+    display: flex;
+    justify-content: center;
+}
+
+.contactHeading{
+    font-weight: bold;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.features{
+    font-size: x-large;
+    text-align: center;
+}
+
+.featureHeading{
+    font-weight: bold;
+    font-size: xxx-large;
+    text-align: center;
+}
+
+#jumb{
+    height: 200%;
+}
+
+#contactForm{
+    width: 300px;
+}
 
 
 
