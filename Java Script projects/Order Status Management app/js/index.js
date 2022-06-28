@@ -22,6 +22,16 @@ const openPage = (pageName, element) => {
     }
 }
 
+const contact = () => {
+    tabContents = document.getElementsByClassName('tab-content')
+    document.body.style.backgroundImage = ""
+    for(i = 0; i < tabContents.length; i++){
+        tabContents[i].style.display = 'none'
+    }
+    let contactPage = document.getElementById('contact')
+    contactPage.style.display = 'block'
+}
+
 var orderNumber = 2022050001
 const orderIDArray = new Array()
 var size, quantity, i
